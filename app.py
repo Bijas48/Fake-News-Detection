@@ -91,20 +91,20 @@ news_input = st.text_area("Judul/Isi Berita:", "", height=150)
 
 if st.button("Periksa Berita"):
     if news_input.strip():
-        with st.spinner("Menganalisis berita..."):
-            # Load models
-            vectorizer, model = load_models()
+            with st.spinner("Menganalisis berita..."):
+                # Load models
+                vectorizer, model = load_models()
             
-            # Make prediction
-            transform_input = vectorizer.transform([news_input])
-            prediction = model.predict(transform_input)
-            is_real = prediction[0] == 1
+                # Make prediction
+                transform_input = vectorizer.transform([news_input])
+                prediction = model.predict(transform_input)
+                is_real = prediction[0] == 1
             
-            # Display result
-            if is_real:
-                st.success("✅ Berita ini kemungkinan ASLI!")
-            else:
-                st.error("❌ Berita ini kemungkinan PALSU!")
+                # Display result
+                if is_real:
+                    st.success("✅ Berita ini kemungkinan ASLI!")
+                else:
+                    st.error("❌ Berita ini kemungkinan PALSU!")
             
             # Get and display explanation
             st.subheader("Penjelasan:")
