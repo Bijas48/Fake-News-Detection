@@ -54,10 +54,7 @@ def get_explanation(news_text, is_real):
     
     Model ML kami telah mengklasifikasikan ini sebagai berita {label}. 
 
-    Berikan penjelasan singkat dan faktual (maksimal 3-4 kalimat) tentang mengapa ini mungkin berita {label}.
-    Fokus pada pengidentifikasian penanda linguistik tertentu, inkonsistensi fakta, bahasa sensasional,
-    atau indikator kredibilitas yang mendukung klasifikasi ini. Pastikan memberikan link seperti dari kompas.com dan lain-bila berita asli atau https://www.komdigi.go.id/berita/berita-hoaks
-    bila berita itu hoaks."""
+    Berikan penjelasan singkat dan faktual (maksimal 3-4 kalimat) tentang mengapa ini mungkin berita {label}. Fokus pada pengidentifikasian penanda linguistik tertentu, inkonsistensi fakta, bahasa sensasional, atau indikator kredibilitas yang mendukung klasifikasi ini. Pastikan memberikan link seperti dari https://www.kompas.com dan lain-lain bila berita asli atau https://www.komdigi.go.id/berita/berita-hoaks bila berita itu hoaks."""
     
     try:
         response = gemini_model.generate_content(prompt)
