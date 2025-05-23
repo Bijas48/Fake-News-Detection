@@ -2,6 +2,10 @@
 
 Aplikasi ini menggunakan model **Logistic Regression** untuk mendeteksi apakah sebuah berita adalah **asli** atau **palsu**. Dibangun menggunakan **Streamlit** untuk antarmuka pengguna.
 
+## Coba Aplikasi
+Aplikasi ini sudah di-deploy di Google Cloud Platform. Anda dapat mencobanya secara langsung tanpa perlu menginstal apa pun di komputer Anda.
+ [Klik disini untuk Mencoba](https://skripsi-ai-agent-459202.et.r.appspot.com) 
+
 ## Fitur
 - Input judul berita untuk diperiksa.
 - Deteksi berita asli atau palsu menggunakan model yang telah dilatih.
