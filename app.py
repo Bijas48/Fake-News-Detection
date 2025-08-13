@@ -37,7 +37,7 @@ def configure_genai():
         return None
     
     genai.configure(api_key=api_key)
-    return genai.GenerativeModel('gemini-2.5-flash-preview-04-17')
+    return genai.GenerativeModel('gemini-2.5-flash-lite')
 
 # Function to get explanation from Gemini
 def get_explanation(news_text, is_real):
